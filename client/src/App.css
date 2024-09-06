@@ -1,0 +1,76 @@
+/* home.css */
+
+.homepage-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Light gray background */
+    font-family: 'Arial', sans-serif;
+    border-radius: 52px;
+}
+
+.form-container {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.title {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: bold;
+}
+
+.input-field, .enter-room-button {
+    width: 100%; /* Full width */
+    padding: 15px; /* Consistent padding */
+    margin-bottom: 20px; /* Space between elements */
+    border-radius: 8px; /* Same border radius */
+    font-size: 18px; /* Same font size */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width/height */
+}
+
+/* Specific styles for input fields */
+.input-field {
+    border: 2px solid #333; /* Dark border around input fields */
+    background-color: #f9f9f9; /* Slightly lighter background inside input */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: border-color 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+/* Focus effect for input fields */
+.input-field:focus {
+    border-color: #6a11cb; /* Gradient border on focus */
+    box-shadow: 0px 0px 12px rgba(106, 17, 203, 0.6); /* Slight glow effect */
+    outline: none;
+    background-color: #ffffff; /* Brighten background on focus */
+}
+
+/* Specific styles for the button */
+.enter-room-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hover effect for the button */
+.enter-room-button:hover {
+    background-color: #555; /* Slightly lighter gray on hover */
+    transform: translateY(-2px); /* Lift button slightly on hover */
+}
+
+/* Active effect for the button */
+.enter-room-button:active {
+    background-color: #222; /* Darker gray when button is pressed */
+    transform: translateY(0); /* Reset button position when pressed */
+}
